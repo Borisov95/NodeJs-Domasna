@@ -1,0 +1,112 @@
+.parent p {
+    background-color: blue;
+}
+/* .parent {
+    background-color: aquamarine;
+}
+p {
+    background-color: red;
+} */
+
+.btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(109, 109, 235);
+}
+
+.button {
+    background-color: green;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button:active {
+    background-color: greenyellow;
+}
+
+.btnbtn {
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btnbtn:focus {
+    background-color: violet;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.box2 {
+    width: 300px;
+    /* padding: 20px; */
+    border: 1px dashed black;
+    margin: 50px;
+}
+
+.box2 p {
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 15px;
+    padding-left: 100px;
+}
+
+.block-example {
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+span {
+    background-color: lightcoral;
+    padding: 5px;
+    border: 1px solid green;
+}
+
+.inline-block-example button {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.background-image-example {
+    background-image: url('photo.png');
+    padding: 10px;
+    /* background-size: cover; */
+}
+
+.border-radius-example {
+    border-radius: 40px;
+    background-color: brown;
+    padding: 20px;
+}
+
+.box-shadow-example {
+    box-shadow: 3px 3px 5px rgb(35, 34, 34);
+    padding: 20px;
+}
+
+.layout-example {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: lightblue;
+}
+
+.shadow-example {
+    text-shadow: 2px 2px 4px blue;
+    box-shadow: 2px 2px 10px black;
+}

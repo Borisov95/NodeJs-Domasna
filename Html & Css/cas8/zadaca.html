@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadaca</title>
+        <style>
+           body{
+            margin: 20px;
+           }
+            .grid-container{
+                max-width: 1000px;
+                display: grid;
+                margin: 0 auto;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+
+            }
+            .grid-container > div{
+                text-align: center;
+                padding: 20px;
+                border: 1px solid;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div>
+                <h2>First Column</h2>
+                <p>Content for the First Column.</p>
+            </div>
+            <div>
+                <h2>Second Column</h2>
+                <p>Content for the Second Column.</p>
+            </div>
+            <div>
+                <h2>Third Column</h2>
+                <p>Content for the Third Column.</p>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>

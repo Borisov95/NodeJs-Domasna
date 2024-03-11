@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Style</title>
+        <style>
+            body{
+                font-family: 'Courier New', Courier, monospace;
+
+            }
+            .title{
+                font-size: 40px;
+                font-weight: bolder;
+                
+            }
+            .text{
+                width: 400px;
+                font-weight: 400;
+                line-height: 50px;
+                letter-spacing: 10px;
+
+            }
+            .responsive{
+                text-align: center;
+                font-size: 40px;
+
+            }
+
+            @media (max-width: 900px) {
+                body{
+                    background-color: red;
+                }
+            }
+            @media (min-width: 1200px){
+                body{
+                    background-color: blue;
+                }
+            }
+
+            @media (max-width: 1024px){
+                .responsive{
+                    font-size: 26px;
+                }
+            }
+
+            @media (max-width: 600px){
+                .responsive{
+                    font-size: 16px;
+                }
+            }
+
+            @media (min-width: 1200px) and (max-width: 1700px) {
+                body{
+                    background-color: green;
+                }
+            }
+
+            @media (min-width: 1300px) and (max-width: 1400px){
+                body{
+                    background-color: blueviolet;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2>Hello World</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore doloribus necessitatibus ex corporis. Corrupti blanditiis aspernatur ea rem animi cupiditate molestiae necessitatibus cum optio quidem. Cumque officiis similique quia?</p>
+        
+        <h1 class="title">This is an example of a heading</h1>
+
+        <h2 class="responsive">Trying out responsive design!</h2>
+    </body>
+</html>

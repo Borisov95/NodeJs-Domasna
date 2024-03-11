@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Driving</title>
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
+ 
+            .grass, .sky, .road {
+                position: relative;
+            }
+ 
+            .sky {
+                height: 40%;
+                background-color: skyblue;
+            }
+ 
+            .grass {
+                height: 30%;
+                background-color: green;
+            }
+ 
+            .road {
+                height: 30%;
+                background-color: gray;
+                border-top: 10px solid rgb(84, 83, 83);
+                border-bottom: 10px solid rgb(84, 83, 83);
+                width: 100%;
+            }
+ 
+            .lines {
+                border: 5px dashed lightslategray;
+                height: 0px;
+                width: 100%;
+                position: absolute;
+                top: 45%;
+            }
+ 
+            .human {
+                position: absolute;
+                top: -40px;
+                left: 0px;
+ 
+                animation: drive;
+                animation-duration: 3s;
+ 
+                /* animation-fill-mode: forwards;    /* zastanuvanje na coveceto na krajnata tocka */
+ 
+                animation-delay: 2s;
+ 
+                animation-fill-mode: backwards;
+ 
+ 
+ 
+                /* REPEATING ANIMATIONS */
+                animation-fill-mode: both;
+ 
+                /* animation-iteration-count: 3; */
+ 
+                animation-iteration-count: infinite;  
+ 
+                /* animation-direction: reverse; */
+ 
+            }
+ 
+            @keyframes drive {
+                from { transform: translateX(-200px); }
+                to { transform: translateX(2000px); }
+            }
+
+            /* @keyframes drive2 {
+                from { transform: translateX(2000px); }
+                to { transform: translateX(0); }
+            } */
+
+            .human2{
+                margin-top: 200px;
+                position: absolute;
+                animation: drive2;
+                animation-duration: 6s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;  
+                animation-direction: reverse;
+                
+            }
+
+ 
+        </style>
+    </head>
+    <body>
+        <div class="sky"></div>
+        <div class="grass"></div>
+        <div class="road">
+            <div class="lines"></div>
+            <img class="human" src="https://www.shutterstock.com/image-vector/young-boy-drives-car-vector-600nw-2273044343.jpg" width="90px" height="auto">
+            <img class="human2" src="https://www.shutterstock.com/image-vector/young-boy-drives-car-vector-600nw-2273044343.jpg" width="90px" height="auto">
+        </div>
+    </body>
+</html>

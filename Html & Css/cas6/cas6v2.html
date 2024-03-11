@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semantic elements</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color: rgb(136, 132, 132);
+                padding: 20px;
+                text-align: center;
+                
+            }
+            nav{
+                background-color: antiquewhite;
+                padding: 10px;
+                border-top: 2px black solid;
+            }
+            nav ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+              }
+            nav ul li a:hover{
+                color: cornflowerblue;
+            }
+
+            section{
+                padding: 10px;
+                margin: 10px;
+                background-color: rgb(63, 105, 105);
+                text-align: center;
+                
+            }
+            aside{
+                padding: 20px;
+                background-color: cadetblue;
+                grid-area: content;
+            }
+            main{
+                display: flex;
+                padding: 20px;
+                justify-content: space-between;
+                background-color: lightslategray;
+            }
+            footer{
+                background-color: brown;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>This is the Heading of the Website</h1>
+            <p>Some information about the web site.........</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About as</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div>
+            <section class="sectio1">
+                <h2>First Part</h2>
+                <p>Content of the First part....</p>
+            </section>
+            <section class="section2">
+                <h2>Second Part</h2>
+                <p>Content of the Secont part....</p>
+            </section>
+            </div>
+            <aside class="aside1">
+                <h3>Third Part</h3>
+                <p>Content of the Third part...</p>
+            </aside>
+        </main>
+        
+        <footer>
+            <p>Autgor rights &copy; 2023.</p>
+        </footer>
+
+    </body>
+</html>

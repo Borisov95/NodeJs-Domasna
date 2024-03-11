@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Header Example</title>
+  <style>
+    body {
+    margin: 0px;
+    padding: 0px;
+    
+  }
+  header{
+    position: sticky;
+    top: 0;
+  }
+  .container{
+
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: silver;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding-top: 30px;
+  }
+
+  header .hdrtxt{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+  }
+
+  header img {
+    width: 300px; 
+  }
+  
+  ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  ul li{
+      list-style: none;
+      font-size: 27px;
+      color: rgb(94, 88, 88);
+      font-family: Arial;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px;
+
+  }
+  ul li:hover{
+      color: silver;
+  }
+
+  #btn{
+      background-color: rgb(131, 129, 129);
+      color: rgb(0, 0, 0);
+      transition: background-color 0.2s ease;
+      padding: 5px;
+      }
+  #btn:active{
+      background-color: rgb(230, 230, 230);
+  }
+  .card-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: silver;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .card{
+    margin: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    border: 1px silver solid ;
+    border-radius: 10px;
+    gap: 1;
+  }
+  footer{
+    background-color: silver;
+    text-align: center;
+    padding: 20px;
+  }
+
+  </style>
+</head>
+<body>
+    
+  <header>
+    <div class="container">
+      <h4 class="hdrtxt">Статус на нарачка | Продавница</h4>
+    <img style="margin-right: 20px; " src="https://media.megamallsofia.bg/pictures/original_1109.png" alt="Logo">
+      <h4 class="hdrtxt">Пријавете се | Регистрирајте се</h4>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+        <li>Актуелно</li>
+        <li>Мажи</li>
+        <li>Жени</li>
+        <li>Деца</li>
+        <li>Спортови</li>
+        <li>Брендови</li>
+        <li>Nike</li>
+        <li>Adidas</li>
+        <li>Under Armour</li>
+        <li>Новости</li>
+        <span>
+            <input for=btn style="padding: 5px;" type="text" placeholder="Пребарај ја страната">
+            <button id="btn">Пребарај</button>
+        </span>
+    </ul>      
+  </nav>
+
+  <main>
+    <section class="card-container">
+
+      <div class="card">
+        <img style="width: 300px; height: 270px;" src="https://www.sportvision.mk/files/thumbs/files/images/slike_proizvoda/media/FB9/FB9657-001/images/thumbs_350/FB9657-001_350_350px.jpg">
+        <h3><a style="text-decoration: none;" href="https://www.sportvision.mk/mk/obuvki/8559168-nike-air-max-90">Nike Air Max 90</a></h3>
+        <p style="color: red; font-weight: bold;">8.712 ДЕН</p>
+        <p><s>10.890 ДЕН</s></p>
+     </div>
+
+      <div class="card">
+        <img style="width: 300px; height: 270px;" src="https://www.sportvision.mk/files/thumbs/files/images/slike_proizvoda/media/UMA/UMA233M611-4U/images/thumbs_350/UMA233M611-4U_350_350px.jpg">
+        <h3><a style="text-decoration: none;" href="https://www.sportvision.mk/mk/tekstil/8549590-umbro-diamond">UMBRO Diamond</a></h3>
+        <p style="color: red; font-weight: bold;">2.814 ДЕН</p>
+        <p><s>4.690 ДЕН</s></p>
+      </div>
+
+      <div class="card">
+        <img style="width: 300px; height: 270px;" src="https://www.sportvision.mk/files/thumbs/files/images/slike_proizvoda/media/ELA/ELA233F604-93/images/thumbs_350/ELA233F604-93_350_350px.jpg">
+        <h3><a style="text-decoration: none;" href="https://www.sportvision.mk/mk/tekstil/8552301-ellesse-ladies">Ellese Ladies</a></h3>
+        <p style="color: red; font-weight: bold;">2.034 ДЕН</p>
+        <p><s>3.390 ДЕН</s></p>
+      </div>
+
+      <div class="card">
+        <img style="width: 300px; height: 270px;" src="https://www.sportvision.mk/files/thumbs/files/images/slike_proizvoda/media/DV1/DV1296-010/images/thumbs_350/DV1296-010_350_350px.jpg">
+        <h3><a style="text-decoration: none;" href="https://www.sportvision.mk/mk/oprema/8563747-nike-hayward">Nike Hayward</a></h3>
+        <p style="color: red; font-weight: bold;">2.392 ДЕН</p>
+        <p><s>2.990 ДЕН</s></p>
+      </div>
+
+      <div class="card">
+        <img style="width: 300px; height: 270px;" src="https://www.sportvision.mk/files/thumbs/files/images/slike_proizvoda/media/FB8/FB8195-010/images/thumbs_350/FB8195-010_350_350px.jpg">
+        <h3><a style="text-decoration: none;" href="https://www.sportvision.mk/mk/tekstil/8553278-nike-storm-fit">Nike Storm-FIT</a></h3>
+        <p style="color: red; font-weight: bold;">7.792 ДЕН</p>
+        <p><s>10.390 ДЕН</s></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2023 www.sportvision.mk, Изработка NB SOFT. Сите права задржани.</p>
+  </footer>
+
+
+ 
+  
+
+    
+</body>
+</html>
+

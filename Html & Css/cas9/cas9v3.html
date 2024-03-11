@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <style>
+            body{
+                margin: 0;
+
+            }
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .box{
+                background-color: bisque;
+                padding: 20px;
+
+            }
+            /* @media (max-width: 1300px) {
+                .container{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media(max-width:970px){
+                .container{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width: 650px){
+                .container{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+            @media (orientation: portrait){
+                body{
+                    background-color: blueviolet;
+                }
+            }
+             @media(min-width: 1500px){
+                .container{
+                    max-width: 1400px;
+                }
+             }
+             @media(min-width:700px) and (max-width:1200px){
+                .container{
+                    gap: 10px;
+                    font-weight: bolds;
+                }
+             } */
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h2>First Column</h2>
+                <p>Content for the first column.</p>
+            </div>
+            <div class="box">
+                <h2>Second Column</h2>
+                <p>Content for the second column.</p>
+            </div>
+            <div class="box">
+                <h2>Third Column</h2>
+                <p>Content for the third column.</p>
+            </div>
+            <div class="box">
+                <h2>Fourth Column</h2>
+                <p>Content for the fourth column.</p>
+            </div>
+            <div class="box">
+                <h2>Fifth Column</h2>
+                <p>Content for the fifth column.</p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

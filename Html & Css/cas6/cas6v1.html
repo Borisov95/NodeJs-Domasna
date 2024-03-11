@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning in CSS</title>
+        <style>
+            .static-example{
+                position: static;
+            }
+            .relative-example{
+                position: relative;
+                top: 50px;
+                left: 50px;
+            }
+            .absolut-examole{
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+            .fixed-example{
+                position: fixed;
+                top: 0;
+                right: 0;
+            }
+            .sticky-example{
+                position: sticky;
+                top: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="static-example">
+            <h2>Static Example</h2>
+            <p>This is an element with static positioning</p>
+        </div>
+
+        <div class="relative-example">
+            <h2>Relative Example</h2>
+            <p>This is an element with relative position</p>
+        </div>
+
+        <div style="position: relative;">
+            <div class="absolut-examole">
+                <h2>Absolut Example</h2>
+                <p>This is an element with absolut positioning.</p>
+            </div>
+        </div>
+
+        <div style="height: 1500px;">
+            <div class="fixed-example">
+                 <h2>Fixed Example</h2>
+                  <p>This is an element with fixed positioning.</p>
+             </div>
+        </div>
+
+        <div style="height: 1500px;">
+            <div class="sticky-example">
+                <h2>Sticky Example</h2>
+                <p>This is an element with fixed positioning.</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>

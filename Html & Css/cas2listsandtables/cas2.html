@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lists & Tables</title>
+    </head>
+    <body>
+
+        <!--Lists-->
+        <ul type="square">
+           <li>Pulp Fiction</li> 
+           <li>The Last Picture Show</li>
+           <li>The Exorcist</li>
+        </ul>
+
+        <ol type="a" start="3">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+        </ol>
+
+        <dl>
+            <dt>SGML</dt>
+                <dd>Standard Generalized Markup Language</dd>
+            <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+        </dl>
+
+        <hr>
+
+        <!--Nested links-->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul>
+                    <li>2023</li>
+                    <li>2022</li>
+                    <li>2021</li>
+                    <li><a href="#">2020</a></li>
+                </ul>
+            </li>
+            <li>Company</li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Create an unordered list with 5 list items and 1 h2 tag inside them -->
+        <br>
+        <ul>
+            <li>List1
+                <ul>
+                    <h2>Heading 2</h2>
+                </ul>
+            </li>
+            <li>List 2
+                <ul>
+                    <h2>Heading 2</h2>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 1. Create an unordered list and fill it with 10 states (Macedonia..)
+             2. Create a nested list, using the previous one and fill it with 
+                the capital city of each state 
+             3. Create a ordered list of Newton's laws
+        -->
+
+        <!-- Tables -->
+<br><hr>
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Table data 1</td>
+                <td>Table data 2</td>
+                <td>Table data 3</td>
+            </tr>
+        </table>
+
+        <br><hr>
+        <!-- Table 2-->
+        <table border="1" cellpadding="5" cellspacing="5">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+                <th>Telephone Number</th>
+            </tr>
+            <tr>
+                <td>Iva</td>
+                <td>Ugrinoska</td>
+                <td >iva.ugrinoska@gmail.com</td>
+                <td>071/222-333</td>
+            </tr>
+            <tr>
+                <td>Pero</td>
+                <!-- <td>Perovski</td> -->
+                <td colspan="2" >p.p@gmail.com</td>
+                <td>070/111-222</td>
+            </tr>
+            <tr>
+                <td>Marko</td>
+                <td>Krstevski</td>
+                <td>m.k@gmail.com</td>
+                <td>070/111-222</td>
+            </tr>
+        </table>
+
+        <br><hr>
+
+        <!-- Table 3 -->
+        <table border="1">
+            <tr>
+                <th>Zaglavie na tabelata 1</th>
+                <th>Zaglavie na tabelata 2</th>
+                <th>Zaglavie 3</th>
+            </tr>
+            <tr>
+                <td>Kolona 1</td>
+                <td colspan="2">Kolona 2</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

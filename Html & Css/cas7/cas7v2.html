@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            nav{
+                font-size: 36px;
+                background-color: antiquewhite;
+
+            }
+            nav ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+
+            }
+            nav ul li{
+                cursor: pointer;
+                color: rgb(138, 53, 53);
+
+                flex: auto;
+            }
+            nav ul li:hover{
+                background-color: rgb(75, 64, 51);
+                color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>youtube</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </body>
+</html>
