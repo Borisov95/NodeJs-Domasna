@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<%- include("partials/header") %>
+<table border="1" width="100%">
+    <tr>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>Quantity</th>
+        <th>DaysLeftToUse</th>
+        <th>PlaceWhereAvalible</th>
+        <th>Delete</th>
+
+    </tr>
+   <% data.forEach((article,i) => { %>
+        <tr>
+            <td><%= article.name %></td>
+            <td><%= article.manufacturer %></td>
+            <td><%= article.quantity %></td>
+            <td><%= article.dayslefttouse %></td>
+            <td><%= article.placewhereavailable %></td>
+            <td>
+                <a href="/delete?articleIndex=<%= i%>">Delete</a>
+            </td>
+        </tr>
+  <% }) %>
+
+</table>
+</body>
+</html>
